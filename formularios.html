@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form >
+       <label for="text">Nombre de usuario</label>
+       <input action="text" value="" name="username" required>
+       <br>
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" required>
+        <br>
+        <label for="country">pais</label>
+        <select name="country" id="">
+            <option value="EU">Estados Unidos</option>
+            <option value="CA">Canada</option>
+            <option value="MX">Mexico</option>
+        </select>
+        <br>
+        <label for="description">descrpción</label>
+        <textarea name="description" id="" cols="5" rows="2" ></textarea>
+<br>
+<label for="age">Edad</label>
+<input type="number" name="age" min=13 max=100 disabled>
+
+
+<br>
+<label for="weight">Peso</label>
+<input type="number" name="weight" min=15 max=100 step="0.5">
+<br>
+<label for="correo">Correo electronico</label>
+<input type="mail" name="correo" autocomplete="off" placeholder="ejemplo@hdslfjh.net">
+<br>
+<label for="phone">Telefono</label>
+<input type="tel" name="phone" id="" autocomplete="off" placeholder="444-444-4444">
+<br>
+<button type="submit">Guardar</button>
+    </form>
+</body>
+</html>
