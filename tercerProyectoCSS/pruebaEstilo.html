@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p
+        {
+            font-size: 20px;
+        }
+        #parrafoGrande{
+            font-size: 30px;
+        }
+        .arial{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .red
+        {
+            color: red;
+        }
+        .blue
+        {
+            color: blue;
+        }
+      /*lo que se hace para */ 
+         button.arial
+        {
+            background-color: lightgreen;
+        }
+
+        h1::first-letter, p{
+            font-weight: bold;
+            color: lightpink !important;
+        }
+        h1::first-line, p::first-line{
+            margin-left: 20px;
+            color: rgb(168, 53, 7)  ;
+
+        }
+
+        button:hover, p:hover{
+            background-color: black;
+            color: white;
+        }
+
+        input:focus{
+            
+            box-shadow: tomato 5px, 5px;
+        }
+
+   
+    </style>
+</head>
+<body>
+    
+    <h1 style="color: lightseagreen;">Ejemplos css</h1>
+    <p id="parrafoGrande">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quia earum consectetur quasi libero vero, consequatur sint eos fuga omnis quibusdam deserunt voluptatem impedit perferendis quis corporis? Nam, nostrum doloribus.</p>
+    <p class="arial blue">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum ad autem, voluptatum tempore consequuntur cumque! Vero asperiores doloribus corporis, repellendus dolore necessitatibus nulla accusamus deserunt. Facere voluptate quas consequuntur labore?</p>
+    
+
+    <p class="arial">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ipsam quisquam facere error tempora, odio est vitae consectetur repellendus amet blanditiis ut quod ad eos consequatur aut delectus sapiente fuga.</p>
+
+    <button class="arial">Presioname</button>
+    <button>Otro</button>
+    <input type="text">
+</body>
+</html>

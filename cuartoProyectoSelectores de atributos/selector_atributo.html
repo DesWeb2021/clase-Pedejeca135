@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Tiene el atributo , no importa el valor*/
+    [name]
+    {
+        background-color: cadetblue;
+    }
+    /*atributo con el valor exacto*/
+    [for="name"]
+    {
+        text-transform: uppercase;
+    }
+    /*atributo con la palabra en el valor*/
+    [alt~="autonoma"]
+    {
+        height: 50px;
+    }
+    /*atributo que el valor empiece con la palabra*/
+    [id|="parrafo"]
+    {   
+        border:solid 2px red;
+    }
+    /*atributo que el valor empiece con la cadena*/
+    [id^="p"]
+    {
+        font-size: 20px;
+    }
+    /*atributo que el valor termina con la cadena*/
+    [name$="e"]{
+        margin-left: 20px;
+    }
+    /*atributo que el valor contienen la cadena*/
+    [for*="tname"]
+    {
+        margin-left: 20px;
+    }
+    </style>
+</head>
+<body>
+    <!--  -->
+    <p id="parrafo-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum maiores nesciunt illum, aperiam, quibusdam sapiente facilis quam saepe asperiores, id totam consequuntur odit in ullam adipisci magnam porro autem debitis!</p>
+    <p id="parrafo-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis recusandae consequuntur cum repellat. Necessitatibus aut laboriosam dolorem officiis eum quaerat placeat qui exercitationem praesentium hic, repellat quibusdam iure ducimus voluptas.      </p>
+    <p id="parrafo-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni beatae quia quibusdam, culpa est quaerat dolorum adipisci, tenetur amet officiis distinctio, cumque at ipsam odio vitae quam aspernatur soluta.   </p>
+
+<img src="UASLP.png" alt="logo de la autonoma">
+
+    <form action="">
+        <label for="name">Nombre</label>
+        <input type="text" name="name">
+        <br>
+        <label for="lastname1">Apellidos</label>
+        <input type="text" name="lastname1">
+        <br>
+        <label for="lastname2">Apellidos</label>
+        <input type="text" name="lastname2">
+        <br>
+        <label for="telephone">Telefono</label>
+        <input type="tel" name="telephone">
+    </form>
+</body>
+</html>
