@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .aux{
+            color: blueviolet;
+            padding:  10px;
+            border: solid red 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hola Mundo</h1>
+
+    <div id="section">
+        <p class="p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nobis laboriosam alias ipsa, illum nisi nulla reprehenderit at saepe vero quia dicta ipsum animi suscipit ratione dolorem sed dolores similique.
+
+        </p>
+    </div>
+
+        <img  alt="UASLP">
+
+        <p class="p">zdghsffggfLorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ex nostrum sunt ducimus quo nisi delectus error sed repudiandae! Dicta labore, iure ipsa molestiae eveniet rerum quibusdam. Suscipit, ipsum quasi?</p>
+
+        <p id="nuevo">
+
+        </p>
+    
+
+   <script>
+        var section = document.getElementById("section");
+
+        console.log(section.innerHTML);
+        console.log(section.innerText);
+        section.style.color = "red";
+        section.className = "aux";
+        section.style.color = "blue";
+
+        console.log(section.id);
+        console.log(section.href);
+        console.log(section.src);
+
+        var imagen = document.querySelector("img");
+        imagen.setAttribute("src", "logo.jpg");
+
+        //elimina un elemento
+        imagen.remove();
+
+        console.log(imagen.src);
+
+        var parrafo = document.getElementById("nuevo");
+
+        parrafo.innerHTML = "lorem ipsum de <b>nuevo</b> parraf0";
+    </script>
+
+    <script>
+        var lista = document.createElement("ul");
+
+        var elem_X = document.createElement("li");
+        var texto = document.createTextNode("Elemento X");
+
+        elem_X.appendChild(texto);
+        lista.appendChild(elem_X);
+
+
+        var elem_Y = document.createElement("li");
+        var texto = document.createTextNode("Elemento Y");
+
+        elem_Y.appendChild(texto);
+        lista.appendChild(elem_Y);
+
+
+        var elem_W = document.createElement("li");
+        var texto = document.createTextNode("Elemento W");
+
+        elem_W.appendChild(texto);
+        lista.insertBefore(elem_W, elem_X);
+
+        console.log(lista);
+        
+
+        document.body.appendChild(lista);
+
+        
+        
+        
+
+    </script>
+
+    <script>
+        var htmlList=
+        "<ul>" +
+            "<li>Elemento W </li>" +
+            "<li>Elemento X </li>" +
+            "<li>Elemento Y </li>" +
+            "</ul>";
+            
+            document.body.innerHTML = document.body.innerHTML + htmlList;
+
+        var htmlList=
+        `<ul>
+            <li>Elemento W </li>
+            <li>Elemento X </li> 
+            <li>Elemento Y </li> 
+            </ul>`
+
+            document.body.innerHTML = document.body.innerHTML + htmlList;
+
+            var letra = "A";
+
+            var htmlList=
+        `<ul>
+            <li>Elemento ${letra} </li>
+            <li>Elemento X </li> 
+            <li>Elemento Y </li> 
+            </ul>`
+
+            document.body.innerHTML = document.body.innerHTML + htmlList;
+
+
+
+    </script>
+
+
+    <!-- <script src="app.js"></script>
+    <script>
+        var x = 1;
+        var z= 5;
+        let yu = 90;
+
+        //este metodo imprime en la pagina
+        // document.write(x);
+        //abre una alerta en el navegador
+        //alert(x);
+        
+        //imprime en la consola del inpeccionador
+        console.log(x);
+        console.log(y);
+
+        x= "Uno";
+        yu = 44;
+
+        console.log(yu);
+
+
+        yu = "djkdkj";
+
+        console.log(yu);
+        var suma = x + z;
+
+        console.log(suma);
+
+        var section = document.getElementById("section");
+
+        console.log(section);
+
+        var h1 = document.getElementsByTagName("h1");
+
+        console.log(h1[0]);
+
+        var p = document.getElementsByClassName("p");
+
+        console.log(p);
+
+        var query = document.querySelector("p");
+
+        var queryAll = document.querySelectorAll("p");
+
+    </script> -->
+</body>
+</html>
